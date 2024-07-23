@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #faf8f3;
+    font-family: 'Urbanist Variable', sans-serif;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.nav-bar {
+    background-color: #b3d4a0;
+}
+
+nav,
+section {
+    flex: 1;
+}
+
+.background-gradient {
+    background: radial-gradient(circle at top center,
+            #faf8f3 0%,
+            /* Light pastel gray */
+            #e0e7ff 70%,
+            /* Light pastel blue */
+            #c7d2fe 100%
+            /* Slightly darker pastel blue */
+        );
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.job-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+footer {
+    padding: 20px 0;
+    /* background-color: #faf8f3; */
+}
