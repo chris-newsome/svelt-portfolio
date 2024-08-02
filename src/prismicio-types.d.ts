@@ -11,6 +11,28 @@ type BlogpostDocumentDataSlicesSlice = RichTextSlice;
  */
 interface BlogpostDocumentData {
 	/**
+	 * Date field in *BlogPost*
+	 *
+	 * - **Field Type**: Date
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: blogpost.date
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#date
+	 */
+	date: prismic.DateField;
+
+	/**
+	 * Hover Image field in *BlogPost*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: blogpost.hover_image
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#image
+	 */
+	hover_image: prismic.ImageField<never>;
+
+	/**
 	 * Slice Zone field in *BlogPost*
 	 *
 	 * - **Field Type**: Slice Zone
